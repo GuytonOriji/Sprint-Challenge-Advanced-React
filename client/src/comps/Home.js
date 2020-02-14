@@ -2,7 +2,6 @@ import React from 'react'
 import {  Card, CardImg, CardText, CardBody,
   CardTitle, CardSubtitle, Button} from 'reactstrap'
 import styled from 'styled-components'
-import useCardDarkMode from './useCardDarkMode'
 
 //nav bar that holds brand name on left and links on right
 const Box = styled.div`
@@ -51,13 +50,13 @@ const Home = props =>{
 
 					return(
 
-						 <Card key={lady.id}>
+						 <Card key={lady.id} className="">
         <CardImg top width="100%" src={props.aMedal} alt="Card image cap" />
         <CardBody>
           <CardTitle>{lady.name}</CardTitle>
           <CardSubtitle>From: {lady.country}</CardSubtitle>
           <CardText>The amount of times searched: {lady.searchs}</CardText>
-          <Button onClick={del}>Remove</Button> <Button onClick={useCardDarkMode}>DarkMode</Button>
+          <Button onClick={del}>Remove</Button>
         </CardBody>
       </Card>
 

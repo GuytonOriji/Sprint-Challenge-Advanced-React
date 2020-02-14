@@ -3,7 +3,7 @@ import logo from './logo.svg';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css';
 import {Switch, Route} from 'react-router-dom'
-import {Container} from 'reactstrap'
+import {Container} from 'react-bootstrap'
 import Header from './comps/Header'
 import Home from './comps/Home'
 import About from './comps/About'
@@ -66,7 +66,7 @@ class App extends React.Component{
                <Route  path='/about'>
                <About  aMedal={this.state.aMedal} />
                </Route>
-               
+
                </Switch>
              </Container>
            );}

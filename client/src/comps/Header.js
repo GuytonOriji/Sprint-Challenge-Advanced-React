@@ -44,6 +44,12 @@ const imggy = {
 
 const Header = props =>{
 
+	
+  const [darkMode, setDarkMode] = useDarkMode();
+  const toggleMode = e => {
+    e.preventDefault();
+    setDarkMode(!darkMode);
+  };
 
 
 	return(
@@ -58,7 +64,7 @@ const Header = props =>{
 			<LinksHolder>
 			<NavLink to="/">Home</NavLink>
 			<NavLink to="/about">About</NavLink>
-			<a onClick={useDarkMode}>DarkMode</a>
+			<a onClick={toggleMode}>DarkMode</a>
 			</LinksHolder>
 		</Nav>
 		)

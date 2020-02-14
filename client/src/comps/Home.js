@@ -55,7 +55,7 @@ const Home = props =>{
         <CardBody>
           <CardTitle>{lady.name}</CardTitle>
           <CardSubtitle>From: {lady.country}</CardSubtitle>
-          <CardText>The amount of times searched: {lady.searchs}</CardText>
+          <CardText>The amount of times searched: {lady.searches}</CardText>
           <Button onClick={del}>Remove</Button>
         </CardBody>
       </Card>

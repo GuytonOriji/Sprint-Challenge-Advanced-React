@@ -67,10 +67,7 @@ class App extends React.Component{
                <Route  path='/about'>
                <About  aMedal={this.state.aMedal} />
                </Route>
-
-               <Route  path='/contact'>
                
-               </Route>
                </Switch>
              </Container>
            );}

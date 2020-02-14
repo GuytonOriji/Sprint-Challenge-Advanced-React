@@ -26,7 +26,7 @@ const LinksHolder = styled.figure`
 flex:1;
 display:flex;
 flex-direction:row;
-justify-content:space-between;
+justify-content:space-around;
 align-items:center;
 
 font-size:1.3rem;
@@ -52,7 +52,6 @@ const Header = props =>{
 			<LinksHolder>
 			<NavLink to="/">Home</NavLink>
 			<NavLink to="/about">About</NavLink>
-			<NavLink to="/contact">Contact</NavLink>
 			</LinksHolder>
 		</Nav>
 		)

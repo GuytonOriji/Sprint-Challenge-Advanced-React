@@ -57,7 +57,6 @@ class App extends React.Component{
            return (
              <Container className="App">
              <Header imgsrc={this.state.worldCupLogo}/>
-               page
 
                <Switch>
                <Route exact path='/'>

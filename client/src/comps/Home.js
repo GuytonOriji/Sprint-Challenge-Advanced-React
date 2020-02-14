@@ -2,7 +2,7 @@ import React from 'react'
 import {  Card, CardImg, CardText, CardBody,
   CardTitle, CardSubtitle, Button} from 'reactstrap'
 import styled from 'styled-components'
-import useMyHook from './UseMyHook'
+import useCardDarkMode from './useCardDarkMode'
 
 //nav bar that holds brand name on left and links on right
 const Box = styled.div`
@@ -57,7 +57,7 @@ const Home = props =>{
           <CardTitle>{lady.name}</CardTitle>
           <CardSubtitle>From: {lady.country}</CardSubtitle>
           <CardText>The amount of times searched: {lady.searchs}</CardText>
-          <Button onClick={del}>Remove</Button> <Button onClick={useMyHook}>DarkMode</Button>
+          <Button onClick={del}>Remove</Button> <Button onClick={useCardDarkMode}>DarkMode</Button>
         </CardBody>
       </Card>
 

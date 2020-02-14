@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import {NavLink} from 'react-router-dom'
+import useDarkMode from './useDarkMode'
 
 //nav bar that holds brand name on left and links on right
 const Nav = styled.div`
@@ -33,6 +34,11 @@ font-size:1.3rem;
 `;
 
 
+//this is probably one of the last comments I can feel myself slowing down
+
+const imggy = {
+	filter:"drop-shadow(1px 1px 1px #fff)"
+}
 
 
 
@@ -43,7 +49,7 @@ const Header = props =>{
 	return(
 		<Nav>
 			<Brand>
-				<img src={props.imgsrc} width='50px' height="50px" />
+				<img src={props.imgsrc} style={imggy} width='50px' height="50px" />
 				<figurecaption>World Cup</figurecaption>
 			</Brand>
 
@@ -52,6 +58,7 @@ const Header = props =>{
 			<LinksHolder>
 			<NavLink to="/">Home</NavLink>
 			<NavLink to="/about">About</NavLink>
+			<a onClick={useDarkMode}>DarkMode</a>
 			</LinksHolder>
 		</Nav>
 		)

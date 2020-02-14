@@ -1,5 +1,4 @@
 html{
-  background-color:#f2e8ed;
   
 }
 
@@ -8,7 +7,6 @@ html{
   width:100%;
   height:100%;
   display:flex;
-  background-color:#f2e8ed;
 }
  
 
@@ -17,4 +15,18 @@ html{
   display:flex;
   flex-direction:column;
 
+}
+
+
+.dark-mode{
+background-color:#000;
+-webkit-text-fill-color:azure;
+color:azure;
+}
+
+
+.light-mode{
+	background-color:#fff;
+-webkit-text-fill-color:#000;
+color:#000;
 }
